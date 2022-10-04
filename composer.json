@@ -1,0 +1,23 @@
+{
+    "name": "companybase/dev",
+    "authors": [
+        {
+            "name": "redbulldev",
+            "email": "nv.hung.red@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Companybase\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Companybase\\Providers\\CompanyBaseProvider"
+            ]
+        }
+    }
+}

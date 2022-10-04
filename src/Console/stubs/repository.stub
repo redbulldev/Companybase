@@ -1,0 +1,11 @@
+<?php
+
+namespace DummyNamespace;
+
+use Companybase\Repositories\Eloquents\AbstractRepository;
+use App\Repositories\Contracts\DummyClassInterface;
+
+class DummyClass extends AbstractRepository implements DummyClassInterface
+{
+    //
+}
