@@ -14,8 +14,6 @@ use Companybase\Http\Controllers\Auth\RegisterController;
 
 use Companybase\Http\Controllers\Admin\SettingController;
 
-use Companybase\Http\Controllers\Admin\ContactController;
-
 use Companybase\Http\Controllers\Admin\TagController;
 
 
@@ -61,6 +59,4 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'CheckLogedOut']], fu
     Route::put('/setting', [SettingController::class, 'updateSetting'])->name('admin.setting');
 
     Route::Resource('/tag', TagController::class);
-
-    Route::Resource('/contact', ContactController::class)->only('index', 'show', 'destroy');
 });

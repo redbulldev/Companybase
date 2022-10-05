@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use Companybase\Models\{Admin};
 use Companyservice\Models\{Service};
 use App\Http\Controllers\Controller;
-use Companybase\Models\{ Setting, Contact, Tag };
+use Companybase\Models\{ Setting, Tag };
 use Companypost\Models\{ Post };
 
 class BaseController extends Controller
