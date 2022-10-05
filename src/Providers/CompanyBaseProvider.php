@@ -59,11 +59,11 @@ class CompanyBaseProvider extends ServiceProvider
     protected function publishResources()
     {
         $this->publishes([
-            __DIR__.'/../public' => public_path('/'),
+            __DIR__.'/../../public' => public_path('/'),
         ], 'public');
 
         $this->publishes([
-            __DIR__.'/../resources/views' => resource_path('views'),
+            __DIR__.'/../../resources/views' => resource_path('views'),
         ], 'views');
 
         $this->publishes([
@@ -71,11 +71,11 @@ class CompanyBaseProvider extends ServiceProvider
         ], 'config');
 
         $this->publishes([
-            __DIR__ . '/../database/migrations' => database_path('/'),
+            __DIR__ . '/../../database/migrations' => database_path('migrations'),
         ], 'database/migrations');
 
         $this->publishes([
-            __DIR__ . '/../database/seeds' => database_path('/'),
+            __DIR__ . '/../../database/seeders' => database_path('seeders'),
         ], 'database/seeds');
     }
 }
